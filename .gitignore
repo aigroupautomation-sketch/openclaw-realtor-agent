@@ -4,3 +4,4 @@ dist/
 .DS_Store
 secrets/
 .DS_Store
+agents/*/secrets/
