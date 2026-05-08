@@ -1,0 +1,18 @@
+{
+  "$id": "find-availability-response.json",
+  "type": "object",
+  "required": ["slots"],
+  "properties": {
+    "slots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["start","end"],
+        "properties": {
+          "start": { "type": "string", "format": "date-time" },
+          "end":   { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  }
+}

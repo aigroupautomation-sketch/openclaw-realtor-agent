@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "required": ["bookingId","agentContact","status"],
+  "properties": {
+    "bookingId": { "type": "string" },
+    "agentContact": { "type": "string" },
+    "status": { "type": "string", "enum": ["CONFIRMED", "PENDING", "FAILED"] }
+  }
+}

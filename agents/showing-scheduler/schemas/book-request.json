@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "required": ["slot","lead"],
+  "properties": {
+    "slot": { "$ref": "find-availability-response.json#/properties/slots/items" },
+    "lead": {
+      "type": "object",
+      "required": ["name","phone"],
+      "properties": { "name": { "type": "string" }, "phone": { "type": "string" } }
+    }
+  }
+}
